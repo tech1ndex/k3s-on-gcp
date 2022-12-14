@@ -1,16 +1,16 @@
 variable "gcp_region" {
   type    = string
-  default = "us-east1"
+  default = "GCP_REGION_FOR_RESOURCES"
 }
 
 variable "publicip" {
   type    = string
-  default = "24.36.167.67/32"
+  default = "IP_IN_CIDR_FORMAT/32"
 }
 
 variable "gcp_user" {
   type    = string
-  default = "tech1ndex"
+  default = "USERNAME_FROM_PROJECT_SSH"
 }
 
 variable "privatekeypath" {
@@ -20,5 +20,5 @@ variable "privatekeypath" {
 
 variable "gcp_project_id" {
   type    = string
-  default = "homelab-uptime-checks"
+  default = "PROJECT_ID_TO_HOST_VM"
 }

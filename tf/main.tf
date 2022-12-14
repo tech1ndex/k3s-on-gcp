@@ -45,7 +45,7 @@ resource "google_compute_instance" "k3s_master_instance" {
             k3sup install \
             --ip ${self.network_interface[0].access_config[0].nat_ip} \
             --ssh-key ~/.ssh/google_compute_engine \
-            --user tech1ndex \
+            --user $(whoami) \
             --sudo \
             --k3s-extra-args '--disable traefik'
         EOT
