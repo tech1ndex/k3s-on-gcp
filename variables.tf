@@ -1,16 +1,16 @@
 variable "gcp_region" {
   type    = string
-  default = "GCP_REGION_FOR_RESOURCES"
+  default = "GCP_REGION_FOR_RESOURCE_CREATION"
 }
 
 variable "publicip" {
   type    = string
-  default = "IP_IN_CIDR_FORMAT/32"
+  default = "YOUR_PUBLIC_IP_IN_CIDR_FORMAT_FOR_CLUSTER_ACCESS/32"
 }
 
 variable "gcp_user" {
   type    = string
-  default = "USERNAME_FROM_PROJECT_SSH"
+  default = "USERNAME_FROM_PROJECT_SSH_OR_OS_LOGIN"
 }
 
 variable "privatekeypath" {
